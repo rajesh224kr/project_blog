@@ -1,0 +1,18 @@
+{% load staticfiles %}
+<table border="2">
+
+    <thead>
+        <th>name</th>
+        <th>laction</th>
+        <th>image</th>
+
+    </thead>
+    {% for x in images %}
+    <tr>
+        <td>{{ x.Iname }}</td>
+        <td>{{ x.Ilocation }}</td>
+        <td>{{x.image }}</td>
+        
+    </tr>
+    {% endfor %}
+</table>
